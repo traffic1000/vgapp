@@ -1,0 +1,30 @@
+<mat-card class="example-card" [routerLink]="['/games/'+console.id]">
+  <mat-card-header>
+    <div mat-card-avatar ngClass="{{ console.status }}-header-image"></div>
+    <mat-card-title>{{ console.title }}</mat-card-title>
+    <mat-card-subtitle>{{ console.subtitle }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="../../assets/images/{{ console.imageFileName }}" alt="Image missing">
+  <mat-card-content>
+    <div>
+      <table width="100%">
+        <tr>
+          <td>Verkaufte Geräte</td>
+          <td align="right">{{ console.soldUnits }}</td>
+        </tr>
+        <tr>
+          <td>Spiele</td>
+          <td align="right">{{ console.publishedGames }}</td>
+        </tr>
+        <tr>
+          <td>Entwicklung von</td>
+          <td align="right">{{ console.developedFrom }}</td>
+        </tr>
+        <tr>
+          <td>Entwicklung bis</td>
+          <td align="right">{{ console.developedTo }}</td>
+        </tr>
+      </table>
+    </div>
+  </mat-card-content>
+</mat-card>
