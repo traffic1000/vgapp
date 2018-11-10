@@ -1,59 +1,38 @@
-import {
-  Component,
-  OnInit
-} from '@angular/core';
-import {
-  DataService
-} from '../data.service';
-import {
-  ActivatedRoute
-} from '@angular/router';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {DataService} from '../data.service';
+import {ActivatedRoute, Router} from '@angular/router';
+import {MatTableDataSource, MatSort, MatFormFieldControl} from '@angular/material';
+import {IGame } from '../game';
 
 @Component({
   selector: 'app-games',
   templateUrl: './games.component.html',
   styleUrls: ['./games.component.scss']
 })
+
 export class GamesComponent implements OnInit {
 
-  public games = [];
-
   console$: Object;
+  displayedColumns: string[] = ['videogameName', 'reviewValue'];
+  dataSource;
 
-  constructor(private data: DataService, private route: ActivatedRoute) {
+  @ViewChild(MatSort) sort: MatSort;
+
+  constructor(private data: DataService, private route: ActivatedRoute, private router: Router) {
     this.route.params.subscribe(params => this.console$ = params.id)
   }
 
   ngOnInit() {
-    this.data.getGamesByConsole(this.console$).subscribe(
-      data => this.games = data
-    );
+    //https://stackoverflow.com/questions/50619337/mattabledatasource-how-to-refresh-table-when-a-new-record-is-added-to-the-serv
+    this.data.getGamesByConsole(this.console$).subscribe((data: IGame[]) => {
+      const sorted = data.sort((a, b) => a.videogameName.localeCompare(b.videogameName));
+      this.dataSource = new MatTableDataSource<IGame>(sorted);
+      this.dataSource.sort = this.sort;
+      //console.log(this.dataSource)
+    });
   }
 
-  // https://akveo.github.io/ng2-smart-table/#/documentation
-  settings = {
-    columns: {
-      videogameName: {
-        title: 'Name',
-        sortDirection: 'asc'
-      },
-      reviewValue: {
-        title: 'Value'
-      },
-      reviewIssue: {
-        title: 'Issue'
-      },
-      remark: {
-        title: 'Remark'
-      }
-    },
-    pager: {
-      display: false
-    },
-    actions: {
-      add: false,
-      delete: false,
-      edit: false
-    }
-  };
+  private navigate(gameID){
+    this.router.navigate(['/game', gameID]);
+  }
 }

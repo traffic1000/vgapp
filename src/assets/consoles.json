@@ -137,10 +137,10 @@
         "subtitle": "Master System",
         "status": "owning",
         "imageFileName": "Sega_MasterSystem_Sonic.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
+        "soldUnits": "10 Mio",
+        "publishedGames": 300,
+        "developedFrom": 1983,
+        "developedTo": 1995
     },
     {
         "id": 7,
@@ -148,9 +148,53 @@
         "subtitle": "Mega Drive",
         "status": "owning",
         "imageFileName": "Sega_MegaDrive_Sonic.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
+        "soldUnits": "30 Mio",
+        "publishedGames": 850,
+        "developedFrom": 1988,
+        "developedTo": 1997
+    },
+    {
+        "id": 23,
+        "title": "Sega",
+        "subtitle": "Mega CD",
+        "status": "missing",
+        "imageFileName": "Sega_MegaCD_Sonic.jpg",
+        "soldUnits": "n/a",
+        "publishedGames": 80,
+        "developedFrom": "n/a",
+        "developedTo": "n/a"
+    },
+    {
+        "id": 21,
+        "title": "Sega",
+        "subtitle": "32X",
+        "status": "missing",
+        "imageFileName": "Sega_32X_Sonic.jpg",
+        "soldUnits": "n/a",
+        "publishedGames": 40,
+        "developedFrom": "n/a",
+        "developedTo": "n/a"
+    },
+    {
+        "id": 17,
+        "title": "Sega",
+        "subtitle": "Game Gear",
+        "status": "owning",
+        "imageFileName": "Sega_GameGear_Sonic.jpg",
+        "soldUnits": "11 Mio",
+        "publishedGames": 300,
         "developedFrom": 1990,
+        "developedTo": 1996
+    },
+    {
+        "id": 10,
+        "title": "Sega",
+        "subtitle": "Saturn",
+        "status": "owning",
+        "imageFileName": "Sega_Saturn_Sonic.jpg",
+        "soldUnits": "10 Mio",
+        "publishedGames": 1200,
+        "developedFrom": 1994,
         "developedTo": 2000
     },
     {
@@ -159,54 +203,10 @@
         "subtitle": "Dreamcast",
         "status": "owning",
         "imageFileName": "Sega_Dreamcast_Sonic.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
-    },
-    {
-        "id": 10,
-        "title": "Sega",
-        "subtitle": "Saturn",
-        "status": "owning",
-        "imageFileName": "Sega_Saturn_Sonic.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
-    },
-    {
-        "id": 23,
-        "title": "Sega",
-        "subtitle": "Mega CD",
-        "status": "missing",
-        "imageFileName": "Sega_MegaCD_Sonic.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
-    },
-    {
-        "id": 21,
-        "title": "Sega",
-        "subtitle": "32X",
-        "status": "missing",
-        "imageFileName": "Sega_32X_Sonic.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
-    },
-    {
-        "id": 17,
-        "title": "Sega",
-        "subtitle": "Game Gear",
-        "status": "owning",
-        "imageFileName": "Sega_GameGear_Sonic.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
+        "soldUnits": "10 Mio",
+        "publishedGames": 500,
+        "developedFrom": 1998,
+        "developedTo": 2004
     },
     {
         "id": 11,
@@ -214,10 +214,10 @@
         "subtitle": "PS One",
         "status": "owning",
         "imageFileName": "Sony_PS1_MetalGear.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
+        "soldUnits": "102 Mio",
+        "publishedGames": 3000,
+        "developedFrom": 1994,
+        "developedTo": 2004
     },
     {
         "id": 12,
@@ -225,10 +225,10 @@
         "subtitle": "PS 2",
         "status": "owning",
         "imageFileName": "Sony_PS2_MetalGear.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
+        "soldUnits": "155 Mio",
+        "publishedGames": 4000,
+        "developedFrom": 2000,
+        "developedTo": 2013
     },
     {
         "id": 18,
@@ -236,21 +236,10 @@
         "subtitle": "PSP",
         "status": "owning",
         "imageFileName": "Sony_PSP_MetalGear.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
-    },
-    {
-        "id": 33,
-        "title": "Sony",
-        "subtitle": "PS Vita",
-        "status": "owning",
-        "imageFileName": "Sony_PSVita_MetalGear.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
+        "soldUnits": "80 Mio",
+        "publishedGames": 500,
+        "developedFrom": 2004,
+        "developedTo": 2013
     },
     {
         "id": 27,
@@ -258,10 +247,21 @@
         "subtitle": "PS 3",
         "status": "owning",
         "imageFileName": "Sony_PS3_MetalGear.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
+        "soldUnits": "85 Mio",
+        "publishedGames": 1000,
+        "developedFrom": 2006,
+        "developedTo": 2017
+    },
+    {
+        "id": 33,
+        "title": "Sony",
+        "subtitle": "PS Vita",
+        "status": "owning",
+        "imageFileName": "Sony_PSVita_MetalGear.jpg",
+        "soldUnits": "8 Mio",
+        "publishedGames": 160,
+        "developedFrom": 2011,
+        "developedTo": 2017
     },
     {
         "id": 32,
@@ -269,10 +269,10 @@
         "subtitle": "PS 4",
         "status": "owning",
         "imageFileName": "Sony_PS4_MetalGear.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
+        "soldUnits": "20 Mio",
+        "publishedGames": 100,
+        "developedFrom": 2013,
+        "developedTo": "läuft noch"
     },
     {
         "id": 14,
@@ -280,10 +280,10 @@
         "subtitle": "XBox",
         "status": "owning",
         "imageFileName": "Microsoft_Xbox_Halo.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
+        "soldUnits": "25 Mio",
+        "publishedGames": 700,
+        "developedFrom": 2001,
+        "developedTo": 2008
     },
     {
         "id": 15,
@@ -291,10 +291,10 @@
         "subtitle": "XBox 360",
         "status": "missing",
         "imageFileName": "Microsoft_Xbox360_Halo.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
+        "soldUnits": "84 Mio",
+        "publishedGames": 1000,
+        "developedFrom": 2005,
+        "developedTo": 2015
     },
     {
         "id": 30,
@@ -302,10 +302,10 @@
         "subtitle": "XBox One",
         "status": "owning",
         "imageFileName": "Microsoft_XboxOne_Halo.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
+        "soldUnits": "15 Mio",
+        "publishedGames": 100,
+        "developedFrom": 2013,
+        "developedTo": "läuft noch"
     },
     {
         "id": 20,
@@ -343,13 +343,13 @@
     {
         "id": 16,
         "title": "SNK",
-        "subtitle": "Neo Geo Pocket Color",
+        "subtitle": "Neo Geo Pocket (Color)",
         "status": "owning",
         "imageFileName": "SNK_NeoGeoPocketColor_MetalSlug.jpg",
-        "soldUnits": "50 Mio",
-        "publishedGames": 2000,
-        "developedFrom": 1990,
-        "developedTo": 2000
+        "soldUnits": "2 Mio",
+        "publishedGames": 80,
+        "developedFrom": 1998,
+        "developedTo": 2001
     },
     {
         "id": 25,
