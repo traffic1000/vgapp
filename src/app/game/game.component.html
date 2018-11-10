@@ -1,0 +1,27 @@
+<ul class="flex-container">
+  <li class="flex-item" *ngIf="game">
+    <mat-card class="card" width=100%>
+      <mat-card-header>
+        <mat-card-title>{{ game.videogameName }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div>
+          <table width=100%>
+            <tr>
+              <td>Wertung</td>
+              <td align="right">{{ game.reviewValue }}</td>
+            </tr>
+            <tr>
+              <td>Ausgabe</td>
+              <td align="right">{{ game.reviewIssue }}</td>
+            </tr>
+            <tr>
+              <td>Bemerkung</td>
+              <td align="right">{{ game.remark }}</td>
+            </tr>
+          </table>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </li>
+</ul>

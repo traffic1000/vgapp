@@ -1,2 +1,21 @@
-<ng2-smart-table [settings]="settings" [source]="games">
-</ng2-smart-table>
+<div class="mat-elevation-z8">
+  <!-- Sortable Columns -->
+  <table mat-table [dataSource]="dataSource" matSort>
+    <!-- Name Column -->
+    <ng-container matColumnDef="videogameName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+      <td mat-cell *matCellDef="let game"> <span style="cursor:pointer;" (click)="navigate(game.id)">
+          {{game.videogameName}}</span> </td>
+    </ng-container>
+
+    <!-- ReviewValue Column -->
+    <ng-container matColumnDef="reviewValue">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Value </th>
+      <td align="right" mat-cell *matCellDef="let game"> {{game.reviewValue}} </td>
+    </ng-container>
+
+    <!-- Sticky Header -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

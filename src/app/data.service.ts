@@ -19,4 +19,9 @@ export class DataService {
   getGamesByConsole(consoleId): Observable<IGame[]>{
     return this.http.get<IGame[]>('https://vgdbreadapi20181029030422.azurewebsites.net/api/vgdbread/consoles/'+consoleId);
   }
+
+  // Game-Details laden
+  getGame(gameId): Observable<IGame>{
+    return this.http.get<IGame>('https://vgdbreadapi20181029030422.azurewebsites.net/api/vgdbread/games/'+gameId);
+  }
 }
