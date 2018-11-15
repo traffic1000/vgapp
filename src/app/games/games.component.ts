@@ -12,6 +12,7 @@ import {IGame } from '../game';
 
 export class GamesComponent implements OnInit {
 
+  gameNum;
   console$: Object;
   displayedColumns: string[] = ['videogameName', 'reviewValue'];
   dataSource;
@@ -29,6 +30,7 @@ export class GamesComponent implements OnInit {
       this.dataSource = new MatTableDataSource<IGame>(sorted);
       this.dataSource.sort = this.sort;
       //console.log(this.dataSource)
+      this.gameNum = sorted.length;
     });
   }
 
